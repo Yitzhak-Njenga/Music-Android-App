@@ -9,7 +9,6 @@ import android.widget.TextView;
 public class MainActivity extends AppCompatActivity {
 
     //reference to UI elements
-
     LinearLayout L1,L2;
     TextView tv;
 
@@ -19,7 +18,7 @@ public class MainActivity extends AppCompatActivity {
         setContentView(R.layout.activity_main);
 
         L1 =(LinearLayout)findViewById(R.id.l1);
-        L2 =(LinearLayout)findViewById(findViewById(R.id.l2);
+        L2=(LinearLayout)findViewById(R.id.l2);
 
         tv =(TextView)findViewById(R.id.tag);
     }
