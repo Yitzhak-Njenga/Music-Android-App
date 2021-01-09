@@ -9,24 +9,23 @@ import android.widget.LinearLayout;
 import android.widget.TextView;
 import android.widget.Toast;
 
+import butterknife.BindView;
+import butterknife.ButterKnife;
+
 public class MainActivity extends AppCompatActivity {
 
-    //reference to UI elements
-    LinearLayout L1,L2;
-    TextView tv;
-    private Button musicButton;
+    //implemented butter Knife
+@BindView(R.id.musicButton) Button musicButton;
+//    private Button musicButton;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
+        ButterKnife.bind(this);
 
-        L1 =(LinearLayout)findViewById(R.id.l1);
-        L2=(LinearLayout)findViewById(R.id.l2);
 
-        tv =(TextView)findViewById(R.id.tag);
-
-        musicButton =(Button)findViewById(R.id.musicButton);
+//        musicButton =(Button)findViewById(R.id.musicButton);
         musicButton.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
