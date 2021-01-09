@@ -3,6 +3,7 @@ package com.moringaschool.musicapp;
 import androidx.appcompat.app.AppCompatActivity;
 
 import android.os.Bundle;
+import android.widget.Button;
 import android.widget.LinearLayout;
 import android.widget.TextView;
 
@@ -11,6 +12,7 @@ public class MainActivity extends AppCompatActivity {
     //reference to UI elements
     LinearLayout L1,L2;
     TextView tv;
+    private Button musicButton;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
