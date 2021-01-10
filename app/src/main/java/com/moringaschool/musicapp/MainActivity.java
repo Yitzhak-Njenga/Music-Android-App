@@ -2,6 +2,7 @@ package com.moringaschool.musicapp;
 
 import androidx.appcompat.app.AppCompatActivity;
 
+import android.content.Intent;
 import android.os.Bundle;
 import android.view.View;
 import android.widget.Button;
@@ -29,7 +30,10 @@ public class MainActivity extends AppCompatActivity {
         musicButton.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                Toast.makeText(MainActivity.this,"Listen Music of Your Choice",Toast.LENGTH_LONG).show();
+//                Toast.makeText(MainActivity.this,"Listen Music of Your Choice",Toast.LENGTH_LONG).show();
+                Intent intent = new Intent(MainActivity.this,MusicActivity.class);
+                startActivity(intent);
+
             }
         });
     }
