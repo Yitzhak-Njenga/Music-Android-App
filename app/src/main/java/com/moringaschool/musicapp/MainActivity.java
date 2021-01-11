@@ -16,7 +16,7 @@ import butterknife.ButterKnife;
 public class MainActivity extends AppCompatActivity {
 
     //implemented butter Knife
-@BindView(R.id.musicButton) Button musicButton;
+//@BindView(R.id.musicButton) Button musicButton;
 //    private Button musicButton;
 
     @Override
@@ -36,7 +36,10 @@ public class MainActivity extends AppCompatActivity {
 //            }
 //        });
 //    }
-        Intent intent = new Intent(MainActivity.this,MusicActivity.class);
+
+
+        // Slash screen that will run for 5 seconds
+       final Intent intent = new Intent(MainActivity.this,MusicActivity.class);
         Thread thread = new Thread(){
             @Override
             public void run() {
@@ -52,5 +55,5 @@ public class MainActivity extends AppCompatActivity {
             }
         };thread.start();
 
-}
+    }
 }

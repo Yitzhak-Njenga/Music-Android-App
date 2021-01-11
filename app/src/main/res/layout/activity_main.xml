@@ -52,17 +52,17 @@
                  android:textSize="10dp"
                  android:textStyle="italic" />
 
-            <Button
-                android:id="@+id/musicButton"
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:layout_below="@id/tag"
-                android:layout_marginTop="50dp"
-                android:text="Music"
-                android:textColor="@color/white"
-                android:textSize="30sp"
-                android:fontFamily="cursive"
-                />
+<!--            <Button-->
+<!--                android:id="@+id/musicButton"-->
+<!--                android:layout_width="match_parent"-->
+<!--                android:layout_height="wrap_content"-->
+<!--                android:layout_below="@id/tag"-->
+<!--                android:layout_marginTop="50dp"-->
+<!--                android:text="Music"-->
+<!--                android:textColor="@color/white"-->
+<!--                android:textSize="30sp"-->
+<!--                android:fontFamily="cursive"-->
+<!--                />-->
 
         </RelativeLayout>
     </LinearLayout>
