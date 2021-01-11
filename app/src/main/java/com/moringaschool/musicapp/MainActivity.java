@@ -27,14 +27,12 @@ public class MainActivity extends AppCompatActivity {
 
 
 //        musicButton =(Button)findViewById(R.id.musicButton);
-        musicButton.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View v) {
-//                Toast.makeText(MainActivity.this,"Listen Music of Your Choice",Toast.LENGTH_LONG).show();
-                Intent intent = new Intent(MainActivity.this,MusicActivity.class);
-                startActivity(intent);
-
-            }
-        });
-    }
-}
+//        musicButton.setOnClickListener(new View.OnClickListener() {
+//            @Override
+//            public void onClick(View v) {
+////                Toast.makeText(MainActivity.this,"Listen Music of Your Choice",Toast.LENGTH_LONG).show();
+//                Intent intent = new Intent(MainActivity.this,MusicActivity.class);
+//
+//            }
+//        });
+//    }
