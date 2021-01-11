@@ -36,3 +36,21 @@ public class MainActivity extends AppCompatActivity {
 //            }
 //        });
 //    }
+        Intent intent = new Intent(MainActivity.this,MusicActivity.class);
+        Thread thread = new Thread(){
+            @Override
+            public void run() {
+                try {
+                    sleep(5000);
+                } catch (InterruptedException e) {
+                    e.printStackTrace();
+                } finally {
+                    startActivity(intent);
+                    finish();
+
+                }
+            }
+        };thread.start();
+
+}
+}
