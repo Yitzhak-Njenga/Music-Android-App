@@ -26,12 +26,21 @@ public class MusicActivity extends AppCompatActivity {
         setContentView(R.layout.activity_music);
         ButterKnife.bind(this);
 
-        registerButton.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View v) {
-                Toast.makeText(MusicActivity.this,"Register",Toast.LENGTH_LONG).show();
-            }
-        });
+      registerButton.setOnClickListener(new View.OnClickListener() {
+          @Override
+          public void onClick(View view) {
+              Intent intent = new Intent(MusicActivity.this,RegisterActivity.class);
+              startActivity(intent);
+          }
+      });
+
+      loginButton.setOnClickListener(new View.OnClickListener() {
+          @Override
+          public void onClick(View view) {
+              Intent intent = new Intent (MusicActivity.this,LoginActivity.class);
+              startActivity(intent);
+          }
+      });
 
 
     }

@@ -9,16 +9,18 @@
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
         android:theme="@style/Theme.MusicApp">
+        <activity android:name=".RegisterActivity"></activity>
+        <activity android:name=".LoginActivity" />
         <activity android:name=".MusicActivity">
-<!--            android:theme="@style/NoActionBarTheme">-->
-        <meta-data
-            android:name="android.support.PARENT_ACTIVITY"
-            android:value="com.moringaschool.musicapp.MusicActivity">
-        </meta-data>
+
+            <!-- android:theme="@style/NoActionBarTheme"> -->
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="com.moringaschool.musicapp.MusicActivity" />
         </activity>
-
-        <activity android:name=".MainActivity" android:theme="@style/NoActionBarTheme">
-
+        <activity
+            android:name=".MainActivity"
+            android:theme="@style/NoActionBarTheme">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
 
